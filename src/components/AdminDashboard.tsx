@@ -201,7 +201,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
     if (responses.length === 0) return;
     
     let csvContent = '\uFEFF';
-    csvContent += '투표ID,투표일시,투표자이름,핸드폰뒷자리,부서,피추천사원,추천사유\n';
+    csvContent += '투표ID,투표일시,투표자이름,핸드폰뒷자리,부서,피추천직원,추천사유\n';
 
     responses.forEach((r) => {
       const date = new Date(r.timestamp).toLocaleString();
@@ -223,7 +223,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `친절사원_이중투표결과_${new Date().toISOString().split('T')[0]}.csv`);
+    link.setAttribute('download', `친절직원_이중투표결과_${new Date().toISOString().split('T')[0]}.csv`);
     link.style.visibility = 'hidden';
     document.body.appendChild(link);
     link.click();
@@ -237,9 +237,9 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
         <div>
           <button onClick={onBackToSurvey} className="flex items-center gap-1.5 text-xs text-indigo-400 hover:text-indigo-300 font-bold transition-all mb-2" style={{ color: 'var(--primary)' }}>
             <ArrowLeft size={14} />
-            친절 사원 투표 폼으로 이동
+            친절 직원 투표 폼으로 이동
           </button>
-          <h2 className="text-2xl font-extrabold text-slate-100 tracking-tight">친절 사원 실시간 집계판</h2>
+          <h2 className="text-2xl font-extrabold text-slate-100 tracking-tight">친절 직원 실시간 집계판</h2>
           <p className="text-slate-400 text-xs mt-1">간호부 및 행정부서에 들어온 실시간 투표 데이터를 분석하고 순위를 갱신합니다.</p>
         </div>
 

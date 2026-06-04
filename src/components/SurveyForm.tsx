@@ -111,13 +111,13 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
         </h2>
         
         <p className="text-sm sm:text-base font-medium text-slate-500 dark:text-slate-400 max-w-md mx-auto mb-8 leading-relaxed">
-          소중한 한 표를 통해 더욱 따뜻하고 신뢰받는 병원을 만들어가는 데 기여해주셨습니다. 남겨주신 마음은 사원분들께 잘 전달해 드리겠습니다.
+          소중한 한 표를 통해 더욱 따뜻하고 신뢰받는 병원을 만들어가는 데 기여해주셨습니다. 남겨주신 마음은 직원분들께 잘 전달해 드리겠습니다.
         </p>
 
         {/* Highlight Card */}
         <div className="bg-slate-50 dark:bg-slate-900/40 rounded-2xl p-5 border border-slate-100 dark:border-slate-800/80 mb-10 text-left space-y-4">
           <h4 className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider flex items-center gap-1.5 mb-1">
-            <Award size={14} className="text-indigo-500" /> 내가 추천한 친절 사원
+            <Award size={14} className="text-indigo-500" /> 내가 추천한 친절 직원
           </h4>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -170,14 +170,14 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
         <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="space-y-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/30 text-indigo-200 border border-indigo-400/20 backdrop-blur-md">
-              <Heart size={12} className="fill-rose-500 text-rose-500" /> 친절사원 캠페인
+              <Heart size={12} className="fill-rose-500 text-rose-500" /> 친절직원 캠페인
             </span>
             <h2 className="text-xl sm:text-2xl font-black tracking-tight leading-tight">
               가장 친절하고 따뜻했던<br />
-              사원에게 마음을 전해주세요.
+              직원에게 마음을 전해주세요.
             </h2>
             <p className="text-xs text-slate-300 leading-relaxed max-w-md">
-              보내주신 따뜻한 격려와 지지는 사원들이 더 훌륭한 케어와 친절을 실천할 수 있는 가장 큰 원동력이 됩니다.
+              보내주신 따뜻한 격려와 지지는 직원들이 더 훌륭한 케어와 친절을 실천할 수 있는 가장 큰 원동력이 됩니다.
             </p>
           </div>
           <div className="hidden md:flex justify-end shrink-0">
@@ -273,14 +273,14 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">1. 간호부 추천</h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-rose-500/10 text-rose-500">필수</span>
               </div>
-              <p className="text-xs text-slate-400">병동, 외래, 수술실, 응급실 등의 간호부 사원을 입력해주세요.</p>
+              <p className="text-xs text-slate-400">병동, 외래, 수술실, 응급실 등의 간호부 직원을 입력해주세요.</p>
             </div>
           </div>
 
           <div className="space-y-5">
             <div className="space-y-2">
               <label className="form-label text-slate-700 dark:text-slate-300">
-                추천 사원 성함
+                추천 직원 성함
               </label>
               <input
                 type="text"
@@ -328,14 +328,14 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">2. 행정부서 추천</h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/10 text-emerald-500">필수</span>
               </div>
-              <p className="text-xs text-slate-400">원무과, 총무과, 홍보, 의료기사, 시설, 미화, 리넨 등 행정 지원 사원을 입력해주세요.</p>
+              <p className="text-xs text-slate-400">원무과, 총무과, 홍보, 의료기사, 시설, 미화, 리넨 등 행정 지원 직원을 입력해주세요.</p>
             </div>
           </div>
 
           <div className="space-y-5">
             <div className="space-y-2">
               <label className="form-label text-slate-700 dark:text-slate-300">
-                추천 사원 성함
+                추천 직원 성함
               </label>
               <input
                 type="text"
@@ -398,7 +398,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
           
           {!isFormValid() && !isLoading && (
             <p className="text-center text-xs text-slate-400 font-medium leading-normal">
-              투표자 정보(이름, 핸드폰 뒷자리)와 각 부서별 추천 사원명 및 사유를<br />
+              투표자 정보(이름, 핸드폰 뒷자리)와 각 부서별 추천 직원명 및 사유를<br />
               모두 작성해 주시면 제출 버튼이 활성화됩니다.
             </p>
           )}

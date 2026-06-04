@@ -170,7 +170,7 @@ function App() {
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>
-              친절사원 추천 캠페인
+              친절직원 추천 캠페인
             </span>
           </div>
 
@@ -186,7 +186,7 @@ function App() {
                   color: viewMode === 'survey' ? '#ffffff' : 'var(--text-secondary)'
                 }}
               >
-                사원 추천 투표
+                직원 추천 투표
               </button>
               <button
                 onClick={handleAdminTabClick}
@@ -232,9 +232,9 @@ function App() {
         {viewMode === 'survey' ? (
           <div className="space-y-8">
             <div className="text-center max-w-xl mx-auto space-y-2 mb-8">
-              <h1>이달의 친절사원 추천</h1>
+              <h1>이달의 친절직원 추천</h1>
               <p className="text-slate-400 text-sm">
-                환자분들과 동료들에게 친절과 따뜻함으로 헌신해주신 사원을 추천해주세요. 귀하의 한 표가 더욱 행복한 직장 환경을 만듭니다.
+                환자분들과 동료들에게 친절과 따뜻함으로 헌신해주신 직원을 추천해주세요. 귀하의 한 표가 더욱 행복한 직장 환경을 만듭니다.
               </p>
             </div>
             <SurveyForm onComplete={() => {}} onNavigateToAdmin={() => {
@@ -255,7 +255,7 @@ function App() {
 
       {/* Footer */}
       <footer className="py-6 border-t border-slate-900/10 text-center text-xs text-slate-500 mt-auto" style={{ borderColor: 'var(--glass-border)' }}>
-        <p>© 2026 친절사원 추천 캠페인. All rights reserved.</p>
+        <p>© 2026 친절직원 추천 캠페인. All rights reserved.</p>
       </footer>
     </div>
   );
