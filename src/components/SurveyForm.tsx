@@ -328,7 +328,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">2. 행정부서 추천</h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/10 text-emerald-500">필수</span>
               </div>
-              <p className="text-xs text-slate-400">원무과, 총무과, 기획, 기계/시설팀 등 행정 지원 사원을 입력해주세요.</p>
+              <p className="text-xs text-slate-400">원무과, 총무과, 홍보, 의료기사, 시설, 미화, 리넨 등 행정 지원 사원을 입력해주세요.</p>
             </div>
           </div>
 
@@ -340,7 +340,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
               <input
                 type="text"
                 className="form-input text-sm"
-                placeholder="성함 및 부서 (예: 이OO 대리, 총무과 박OO)"
+                placeholder="성함 및 부서 (예: 원무과 홍길동, 미화 김OO)"
                 value={adminName}
                 onChange={(e) => setAdminName(e.target.value)}
                 required
