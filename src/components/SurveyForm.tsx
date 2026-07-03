@@ -329,7 +329,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/10 text-emerald-500">필수</span>
               </div>
               <div className="text-xs text-slate-500 dark:text-slate-400 mt-2 space-y-1">
-                <p><strong>• 진료지원:</strong> 약제과, 방사선과, 임상병리과, 물리치료실 등</p>
+                <p><strong>• 진료지원:</strong> 약제과, 방사선과, 종합검진센터, 임상병리과, 물리치료실 등</p>
                 <p><strong>• 행정/관리:</strong> 원무과, 총무과, 원내 미화/보안, 영양팀 등</p>
               </div>
             </div>
