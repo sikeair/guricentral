@@ -273,7 +273,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">1. 간호부 추천</h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-rose-500/10 text-rose-500">필수</span>
               </div>
-              <p className="text-xs text-slate-400">병동, 외래, 수술실, 응급실 등의 간호부 직원을 입력해주세요.</p>
+              <p className="text-xs text-slate-400">병동, 외래, 수술실, 내시경실, 야간진료 등의 간호부 직원을 입력해주세요.</p>
             </div>
           </div>
 
