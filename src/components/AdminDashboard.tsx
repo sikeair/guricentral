@@ -50,7 +50,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
       '이지훈 대리 (원무과)',
       '김민수 과장 (행정지원)',
       '한예지 주임 (원무과)',
-      '서동현 사원 (기획팀)',
+      '서동현 직원 (기획팀)',
       '윤서아 계장 (인사과)',
     ];
 
