@@ -136,7 +136,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
                 <Building2 size={18} />
               </div>
               <div>
-                <span className="text-[10px] font-bold text-emerald-500 block mb-0.5">행정부서 부문</span>
+                <span className="text-[10px] font-bold text-emerald-500 block mb-0.5">기타 파트 부문</span>
                 <span className="font-extrabold text-sm text-slate-700 dark:text-slate-200">{submittedAdminName}</span>
               </div>
             </div>
@@ -325,10 +325,13 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-2">
-                <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">2. 행정부서 추천</h3>
+                <h3 className="text-base font-extrabold text-slate-800 dark:text-slate-200">2. 기타 파트 추천</h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/10 text-emerald-500">필수</span>
               </div>
-              <p className="text-xs text-slate-400">원무과, 총무과, 홍보, 의료기사, 시설, 미화, 리넨 등 행정 지원 직원을 입력해주세요.</p>
+              <div className="text-xs text-slate-500 dark:text-slate-400 mt-2 space-y-1">
+                <p><strong>• 진료지원:</strong> 약제과, 방사선과, 임상병리과, 물리치료실 등</p>
+                <p><strong>• 행정/관리:</strong> 원무과, 총무과, 원내 미화/보안, 영양팀 등</p>
+              </div>
             </div>
           </div>
 
@@ -340,7 +343,7 @@ export const SurveyForm: React.FC<SurveyFormProps> = ({ onComplete }) => {
               <input
                 type="text"
                 className="form-input text-sm"
-                placeholder="성함 및 부서 (예: 원무과 홍길동, 미화 김OO)"
+                placeholder="성함 및 부서 (예: 원무과 홍길동, 약제과 김OO)"
                 value={adminName}
                 onChange={(e) => setAdminName(e.target.value)}
                 required

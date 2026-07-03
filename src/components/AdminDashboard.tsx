@@ -187,7 +187,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
       list.push({
         id: `${r.id}-admin`,
         timestamp: r.timestamp,
-        department: '행정부서' as const,
+        department: '기타 파트' as const,
         employee_name: r.answers.admin.employee_name,
         nomination_reason: r.answers.admin.nomination_reason,
         voter_name: r.voter_name || '',
@@ -215,7 +215,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
       if (r.answers.admin) {
         const emp = `"${r.answers.admin.employee_name.replace(/"/g, '""')}"`;
         const reason = `"${r.answers.admin.nomination_reason.replace(/\n/g, ' ').replace(/"/g, '""')}"`;
-        csvContent += `${r.id},${date},${voterName},${voterPhone},행정부서,${emp},${reason}\n`;
+        csvContent += `${r.id},${date},${voterName},${voterPhone},기타 파트,${emp},${reason}\n`;
       }
     });
 
@@ -319,7 +319,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
 
             <div className="glass-card p-6 flex items-center justify-between border-emerald-500/10" style={{ backgroundColor: 'rgba(255,255,255,0.85)' }}>
               <div>
-                <span className="text-[10px] font-extrabold text-slate-500 uppercase tracking-widest">🏢 행정부서 추천</span>
+                <span className="text-[10px] font-extrabold text-slate-500 uppercase tracking-widest">🏢 기타 파트 추천</span>
                 <div className="text-3xl font-extrabold mt-1 text-emerald-600" style={{ color: 'var(--accent-emerald)' }}>
                   {adminCount} <span className="text-sm font-medium text-slate-500 font-normal">표 집계</span>
                 </div>
@@ -392,13 +392,13 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
                   <Building2 size={18} />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-slate-800">행정부서 추천 순위</h3>
-                  <p className="text-[10px] text-slate-400">행정 파트 누적 득표 현황</p>
+                  <h3 className="text-base font-bold text-slate-800">기타 파트 추천 순위</h3>
+                  <p className="text-[10px] text-slate-400">기타 파트 누적 득표 현황</p>
                 </div>
               </div>
 
               {adminLeaderboard.length === 0 ? (
-                <p className="text-center text-slate-500 py-10 text-xs">등록된 행정부서 후보가 없습니다.</p>
+                <p className="text-center text-slate-500 py-10 text-xs">등록된 기타 파트 후보가 없습니다.</p>
               ) : (
                 <div className="space-y-4">
                   {adminLeaderboard.map((emp, index) => {
@@ -472,7 +472,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
                     activeTab === 'admin' ? 'bg-white text-emerald-600 shadow-sm' : 'text-slate-500'
                   }`}
                 >
-                  행정부서
+                  기타 파트
                 </button>
               </div>
             </div>
@@ -483,7 +483,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onBackToSurvey }
                 .filter((c) => {
                   if (activeTab === 'all') return true;
                   if (activeTab === 'nursing') return c.department === '간호부';
-                  return c.department === '행정부서';
+                  return c.department === '기타 파트';
                 })
                 .map((comment) => {
                   const isNursing = comment.department === '간호부';
